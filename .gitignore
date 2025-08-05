@@ -1,34 +1,127 @@
-# Gradle files
-.gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
+# ====================
+# OS & Editor files
+# ====================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*.bak
+*.tmp
 *.log
+*.orig
+*.rej
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
+# VSCode & JetBrains IDE
+.vscode/
 .idea/
+*.iml
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
 
-# Keystore files
+# ====================
+# Android Studio / Gradle
+# ====================
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local config (SDK path, etc)
+local.properties
+
+# Output files
+*.apk
+*.ap_
+*.aab
+output-metadata.json
+
+# Crash logs & profiling
+*.log
+*.hprof
+
+# Kotlin
+*.kotlin_module
+
+# Android NDK
+obj/
+
+# Gradle wrapper
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Keystore files (private keys)
 *.jks
 *.keystore
 
-# Google Services (e.g. APIs or Firebase)
+# Google Services (API keys, Firebase config)
 google-services.json
 
-# Android Profiling
-*.hprof
+# ====================
+# Arduino / ESP32
+# ====================
+*.elf
+*.hex
+*.bin
+*.eep
+*.map
+*.lst
+*.d
+*.o
+*.a
+*.s
+*.dmp
+
+# Arduino build caches
+.pio/
+.pioenvs/
+.clangd/
+.build/
+.arduinoide/
+__pycache__/
+*.cpp
+*.ino.*
+
+# ====================
+# MQTT Configurations & Secrets
+# ====================
+mqtt_config.json
+mqtt_secrets.json
+mqtt_keys/
+secrets.env
+.env
+*.pem
+*.crt
+*.key
+
+# ====================
+# Backup, Temporary & Misc files
+# ====================
+*~
+*.bak
+*.old
+*.tmp
+*.orig
+
+# ====================
+# Node.js / Python (if any)
+# ====================
+node_modules/
+package-lock.json
+dist/
+build/
+venv/
+__pycache__/
+
+# ====================
+# Git-specific files
+# ====================
+*.patch
+*.diff
+
+# ====================
+# Optional folders you might want to ignore
+# ====================
+docs-output/
